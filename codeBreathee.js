@@ -5,6 +5,13 @@
 //ctx.arc(95,50,40,0,2*Math.PI);
 //ctx.stroke();
 
+document.getElementById("instruction").innerHTML = "success";
+//changes instruction to next instruction
+//make that dependand on timer (make the timer)
+//which will corespond to the breathing technique
+
+
+//cicrle mechanics starting here
 const dot = new Image();
 function init() {
   dot.src = "dot.png"; //the sample image
