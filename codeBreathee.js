@@ -7,7 +7,7 @@
 
 
 
-document.getElementById("instruction").innerHTML = "success";
+document.getElementById("instruction").innerHTML = "start slowly breathing";
 //changes instruction to next instruction
 //make that dependand on timer (make the timer)
 //which will corespond to the breathing technique
@@ -56,11 +56,19 @@ function draw() {
 init();
 
 function theFunction(){
-    document.getElementById("instruction").innerHTML = "lalala";
+    document.getElementById("instruction").innerHTML = "inhale";
+}
+function theeFunction(){
+    document.getElementById("instruction").innerHTML = "exhale";
 }
 
-setTimeout(theFunction,4000);
-
+setTimeout(theFunction,40000);
+setTimeout(theeFunction,50000);
+//adjust the timing; fix why is the last one only appearing rn
+//- timeout issue?
+//actually, update, inhale appeared too but the
+//timeouts seem to be working at the same time!
+//so it's not the 1 after 2, but 1 and 2
 
 //setTimeout(alert('Hello'),3000); checked that timeout works
 //set the timer when page loads to track when to show inhale,
