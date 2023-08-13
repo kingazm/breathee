@@ -54,21 +54,45 @@ function draw() {
 }
 
 init();
-
-function theFunction(){
+//animate the text
+function inhaleFunction(){
     document.getElementById("instruction").innerHTML = "inhale";
 }
-function theeFunction(){
+function exhaleFunction(){
     document.getElementById("instruction").innerHTML = "exhale";
 }
+function holdFunction(){
+    document.getElementById("instruction").innerHTML = "hold";
+}
+function betterFunction(){
+    document.getElementById("instruction").innerHTML = "better?";
+    ctx.clearRect(0, 0, 300, 300); // clearing the canvas
+}
 
-setTimeout(theFunction,40000);
-setTimeout(theeFunction,50000);
+//for (let i = 0; i < 4; i++) {
+    //setTimeout(inhaleFunction,40000);
+    //setTimeout(holdFunction,43000);
+    //setTimeout(exhaleFunction,50000);
+//}does not work properly?
+setTimeout(inhaleFunction,40000);
+setTimeout(holdFunction,43000);
+setTimeout(exhaleFunction,50000);
+setTimeout(inhaleFunction,90000);
+setTimeout(holdFunction,93000);
+setTimeout(exhaleFunction,100000);
+setTimeout(betterFunction,110000);
+
+//does not work in
+// way setTimeout(holdFunction(omg),4000);
+//an array?
+
 //adjust the timing; fix why is the last one only appearing rn
 //- timeout issue?
 //actually, update, inhale appeared too but the
 //timeouts seem to be working at the same time!
 //so it's not the 1 after 2, but 1 and 2
+//have to add the timeout of 1 to
+//the time i want 2 to be after 1
 
 //setTimeout(alert('Hello'),3000); checked that timeout works
 //set the timer when page loads to track when to show inhale,
