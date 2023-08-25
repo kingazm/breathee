@@ -75,6 +75,9 @@ function betterFunction(){
     //setTimeout(holdFunction,43000);
     //setTimeout(exhaleFunction,50000);
 //}does not work properly?
+
+/*
+//to be put into a loop
 setTimeout(inhaleFunction,40000);
 setTimeout(holdFunction,43000);
 setTimeout(exhaleFunction,50000);
@@ -82,6 +85,29 @@ setTimeout(inhaleFunction,90000);
 setTimeout(holdFunction,93000);
 setTimeout(exhaleFunction,100000);
 setTimeout(betterFunction,110000);
+*/
+
+
+const timings = [
+  { funct: inhaleFunction, delay: 40000 },
+  { funct: holdFunction, delay: 43000 },
+  { funct: exhaleFunction, delay: 50000 },
+  { funct: inhaleFunction, delay: 90000 },
+  { funct: holdFunction, delay: 93000 },
+  { funct: exhaleFunction, delay: 100000 },
+  { funct: betterFunction, delay: 110000 }
+];
+
+for (const timing of timings) {
+  setTimeout(timing.funct, timing.delay);
+}
+
+
+
+
+//setTimeout(alert("Feeling better?"),1000)
+
+
 
 //does not work in
 // way setTimeout(holdFunction(omg),4000);
