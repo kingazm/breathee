@@ -1,3 +1,12 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    /*background-color: black;*/
+    color: white;
+}
+
+a{
+    text-decoration:none;
+}
 .main-content{
     display: flex;
     justify-content: center;
@@ -6,6 +15,7 @@
 
 center{
     margin-top:50px;
+    font-size: 24px;
 }
 
 #betterButton{
@@ -14,6 +24,29 @@ center{
 
 .box{
     margin-top: 130px;
+    display: block;
+}
+body{
+    background-image: url('4ED91410-3A14-4157-AAB5-BEA660FDCDDD.PNG');
 }
 
 /*media queries to be done if needed*/
+
+button, input[type=submit] {
+    border-radius: 3px;
+    border: 1.5px solid #456E70;
+    background-color: #456E70;
+    transition-duration: 0.4s;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: white;
+}
+
+button:hover,input[type=submit]:hover {
+    background-color: #80B0AA;
+    border: 5px solid #80B0AA;
+
+}
+/*hot mess regarding button-input situation - decide for one*/

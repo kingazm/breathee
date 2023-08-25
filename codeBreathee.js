@@ -16,7 +16,7 @@ document.getElementById("instruction").innerHTML = "start slowly breathing";
 //cicrle mechanics starting here
 const dot = new Image();
 function init() {
-  dot.src = "dot.png"; //the sample image
+  dot.src = "dot.png"; //the image going around on circle
   window.requestAnimationFrame(draw);
 }
 
@@ -24,7 +24,7 @@ function draw() {
   const ctx = document.getElementById("canvas").getContext("2d");
   ctx.clearRect(0, 0, 300, 300); // clearing the canvas
 
-  ctx.strokeStyle = "rgba(100,100,100,100)";
+  ctx.strokeStyle = "white"; //while transparent makes the stroke invisible
   ctx.save();
   ctx.translate(150, 150);
 
@@ -36,10 +36,8 @@ function draw() {
   );
   //formula adjusted (numbers 4.1, 4100) so that one
   //circle takes up about seconds (+/-0.5s)
-  //consistent with the box breathing method
-  //update 12.08 7:29 pm: slow down the ball
   // its meant to be calming mechanics
-  //mix of box breathing and calm breaths!!!
+  //mix of box breathing and calm breaths
   //begin with calm small breaths and then etc.
 
   ctx.translate(105, 0);
@@ -67,14 +65,7 @@ function holdFunction(){
 function betterFunction(){
     document.getElementById("instruction").innerHTML = "better?";
 
-    // instert clearing the canvas some way
 }
-
-//for (let i = 0; i < 4; i++) {
-    //setTimeout(inhaleFunction,40000);
-    //setTimeout(holdFunction,43000);
-    //setTimeout(exhaleFunction,50000);
-//}does not work properly?
 
 /*
 //to be put into a loop
@@ -101,29 +92,3 @@ const timings = [
 for (const timing of timings) {
   setTimeout(timing.funct, timing.delay);
 }
-
-
-
-
-//setTimeout(alert("Feeling better?"),1000)
-
-
-
-//does not work in
-// way setTimeout(holdFunction(omg),4000);
-//an array?
-
-//adjust the timing; fix why is the last one only appearing rn
-//- timeout issue?
-//actually, update, inhale appeared too but the
-//timeouts seem to be working at the same time!
-//so it's not the 1 after 2, but 1 and 2
-//have to add the timeout of 1 to
-//the time i want 2 to be after 1
-
-//setTimeout(alert('Hello'),3000); checked that timeout works
-//set the timer when page loads to track when to show inhale,
-//hold, exhale (optionaly, when hold, stop motion)
-
-//when this is done, try and optimize the mechanics
-//with switch or sth
