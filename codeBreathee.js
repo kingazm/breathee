@@ -66,7 +66,8 @@ function holdFunction(){
 }
 function betterFunction(){
     document.getElementById("instruction").innerHTML = "better?";
-    ctx.clearRect(0, 0, 300, 300); // clearing the canvas
+
+    // instert clearing the canvas some way
 }
 
 //for (let i = 0; i < 4; i++) {
