@@ -92,3 +92,4 @@ const timings = [
 for (const timing of timings) {
   setTimeout(timing.funct, timing.delay);
 }
+//next update: change for while function that works when "pause" button not clicked/or goes into infinity!

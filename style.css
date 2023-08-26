@@ -2,6 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     /*background-color: black;*/
     color: white;
+
 }
 
 a{
@@ -9,13 +10,14 @@ a{
 }
 .main-content{
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+
 }
+
 
 center{
     margin-top:50px;
     font-size: 24px;
+
 }
 
 #betterButton{
@@ -23,8 +25,10 @@ center{
 }
 
 .box{
-    margin-top: 130px;
-    display: block;
+    display: grid;
+    place-items: center;
+    padding-top: 4.3%;
+
 }
 body{
     background-image: url('background-toned-down.PNG');
