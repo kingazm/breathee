@@ -27,7 +27,7 @@ center{
     display: grid;
     place-items: center;
     padding-top: 4.3%;
-    
+
 
 }
 body{
@@ -54,7 +54,7 @@ button:hover,input[type=submit]:hover {
 
 }
 
-@media (max-width: 600px) {
+@media (max-height: 2800px) {
     .box{
         zoom: 200%;
     }
