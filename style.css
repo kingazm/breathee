@@ -55,25 +55,34 @@ button:hover,input[type=submit]:hover {
     border: 5px solid #80B0AA;
 
 }
-@media (max-width: 400px) {
-    *{
-        zoom: 115%;
-        margin-bottom: 10%;
 
-    }
-}
+/*base so that it will look somehow but do with bootstrap grids more so that it really responsive*/
 
-    @media (min-width: 401px) and  (max-width: 980px) {
+    @media (min-width: 401px) and  (max-width: 980px) and (orientation: portrait) {
         *{
             zoom: 120%;
-            margin-top:10%;
+            margin-top:20%;
 
         }
         .main-content{
 
         }
 
+
 }
+@media (min-width: 667px) and  (max-width: 980px) and (orientation: portrait){
+    *{
+        zoom: 120%;
+        margin-top:10%;
+
+    }
+    .main-content{
+
+    }
+
+
+}
+
 
 
 /*hot mess regarding button-input situation - decide for one*/
