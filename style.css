@@ -54,11 +54,17 @@ button:hover,input[type=submit]:hover {
 
 }
 
-@media (max-height: 2800px) {
-    .box{
-        zoom: 200%;
+@media (min-width: 768px) and  (max-width: 991px) {
+
+
+        }
+        @media (max-width: 767px) {
+            body {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
-
-}
-
+        }
 /*hot mess regarding button-input situation - decide for one*/
