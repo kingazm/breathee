@@ -58,7 +58,7 @@ button:hover,input[type=submit]:hover {
 
 
         }
-        @media (max-width: 767px) {
+        @media (max-width: 844px) {
             body {
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
