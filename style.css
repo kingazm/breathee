@@ -10,7 +10,6 @@ a{
 }
 .main-content{
     display: flex;
-
 }
 
 
@@ -28,6 +27,7 @@ center{
     display: grid;
     place-items: center;
     padding-top: 4.3%;
+    
 
 }
 body{
@@ -53,4 +53,12 @@ button:hover,input[type=submit]:hover {
     border: 5px solid #80B0AA;
 
 }
+
+@media (max-width: 600px) {
+    .box{
+        zoom: 200%;
+    }
+
+}
+
 /*hot mess regarding button-input situation - decide for one*/
