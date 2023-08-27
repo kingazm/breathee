@@ -1,19 +1,6 @@
-
-//var c = document.getElementById("myCanvas");
-//var ctx = c.getContext("2d");
-//ctx.beginPath();
-//ctx.arc(95,50,40,0,2*Math.PI);
-//ctx.stroke();
-
-
-
 document.getElementById("instruction").innerHTML = "start slowly breathing";
-//changes instruction to next instruction
-//make that dependand on timer (make the timer)
-//which will corespond to the breathing technique
 
-
-//cicrle mechanics starting here
+//ANIMATION SECTION
 const dot = new Image();
 function init() {
   dot.src = "dot.png"; //the image going around on circle
@@ -51,8 +38,10 @@ function draw() {
   window.requestAnimationFrame(draw);
 }
 
+//TEXT SECTION
+
 init();
-//animate the text
+
 function inhaleFunction(){
     document.getElementById("instruction").innerHTML = "inhale";
 }
@@ -62,34 +51,39 @@ function exhaleFunction(){
 function holdFunction(){
     document.getElementById("instruction").innerHTML = "hold";
 }
-function betterFunction(){
-    document.getElementById("instruction").innerHTML = "better?";
-
+function justBreatheFunction(){
+    document.getElementById("instruction").innerHTML = "try to take a few regular breaths";
+}
+function breathee(){
+    setTimeout(inhaleFunction(), 20000);
+    setTimeout(holdFunction(), 8000);
 }
 
-/*
-//to be put into a loop
-setTimeout(inhaleFunction,40000);
-setTimeout(holdFunction,43000);
-setTimeout(exhaleFunction,50000);
-setTimeout(inhaleFunction,90000);
-setTimeout(holdFunction,93000);
-setTimeout(exhaleFunction,100000);
-setTimeout(betterFunction,110000);
-*/
-
-
+//array of objects, used in "for" option but figure out some way to reset the loop, as the infinity loop is not possible
 const timings = [
+    { funct: inhaleFunction, delay: 4000 },
+  { funct: holdFunction, delay: 6000 },
+  { funct: exhaleFunction, delay: 10000 },
+  { funct: inhaleFunction, delay: 16000 },
+  { funct: holdFunction, delay: 20000 },
+  { funct: exhaleFunction, delay: 24000 },
+  { funct: justBreatheFunction, delay: 34000 },
   { funct: inhaleFunction, delay: 40000 },
-  { funct: holdFunction, delay: 43000 },
-  { funct: exhaleFunction, delay: 50000 },
+  { funct: holdFunction, delay: 44000 },
+  { funct: exhaleFunction, delay: 48000 },
+  { funct: justBreatheFunction, delay: 54000 },
+  { funct: inhaleFunction, delay: 60000 },
+  { funct: holdFunction, delay: 66000 },
+  { funct: exhaleFunction, delay: 70000 },
+  { funct: justBreatheFunction, delay: 76000 },
   { funct: inhaleFunction, delay: 90000 },
-  { funct: holdFunction, delay: 93000 },
+  { funct: holdFunction, delay: 94000 },
   { funct: exhaleFunction, delay: 100000 },
-  { funct: betterFunction, delay: 110000 }
+  { funct: justBreatheFunction, delay: 110000 },
 ];
+//adjust the timing
+//for the time being, little ugly but works for now
 
 for (const timing of timings) {
-  setTimeout(timing.funct, timing.delay);
-}
-//next update: change for while function that works when "pause" button not clicked/or goes into infinity!
+        setTimeout(timing.funct, timing.delay);
+    }
