@@ -122,6 +122,9 @@ a{
     body{
         background-image: url('home-toneddown-mobile.PNG');
     }
+    .main-content{
+        padding-top:1vh;
+    }
 }
 /*sth in between tablet and laptop cause in the middle it kinda collapses - works great on mobile tho!*/
 
