@@ -2,41 +2,16 @@
     font-family: 'Montserrat', sans-serif;
     /*background-color: black;*/
     color: white;
-
-
+    box-sizing: border-box;
 }
 
 a{
     text-decoration:none;
 }
-.main-content{
-    display: flex;
-}
 
-
-center{
-    margin-top:50px;
-    font-size: 24px;
-
-}
-
-#betterButton{
-    display: inline;
-}
-
-.box{
-    display: grid;
-    place-items: center;
-    padding-top: 4.3%;
-
-
-}
 body{
     background-image: url('background-toned-down.PNG');
-
 }
-
-/*media queries to be done if needed*/
 
 button, input[type=submit] {
     border-radius: 3px;
@@ -56,33 +31,70 @@ button:hover,input[type=submit]:hover {
 
 }
 
-/*base so that it will look somehow but do with bootstrap grids more so that it really responsive*/
-
-    @media (min-width: 401px) and  (max-width: 980px) and (orientation: portrait) {
-        *{
-            zoom: 120%;
-            margin-top:20%;
-
+section{
+    width: 100%;
+    position: fixed;
         }
-        .main-content{
-
+h1, h4 {
+    text-align: center;
+    padding-top: 7%;
         }
+
+.container{
+    position: fixed;
+        }
+
+#topbar, #footer {
+  height: 7%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+}
+
+#footer{
+    bottom:0;
+    padding-bottom:0.05%;
+}
+
+#topbar{
+    top:0;
+    padding-top:0.05%;
+}
+
+@media (min-width: 768px) and  (max-width: 991px) {
+    h1, h4{
+        font-size: 300%;
+        padding-top: 17vh; /*vertical height - depending on height of the device*/
+    }
+    #footer{
+        bottom:0;
+        font-size: 35px;
+        padding-bottom:1%;
+    }
+
+    #topbar{
+        top:0;
+        font-size: 35px;
+        padding-top:1%;
+    }
+
+    canvas{
+        width:800px;
+        height: 800px;
+
+    }
+    button, input[type=submit] {
+        height: 5vh;
+        width: 40vw;
+        font-size: 40px;
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 767px) {
 
 
 }
-@media (min-width: 667px) and  (max-width: 980px) and (orientation: portrait){
-    *{
-        zoom: 120%;
-        margin-top:10%;
-
-    }
-    .main-content{
-
-    }
-
-
-}
-
-
-
-/*hot mess regarding button-input situation - decide for one*/

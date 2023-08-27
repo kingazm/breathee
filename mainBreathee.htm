@@ -10,25 +10,25 @@
 </HEAD>
 
 <BODY>
-    <div class="top-bar">
-        <div class="about">
-        </div>
+    <div class="container">
+        <section id="topbar">
+         <div id="topbar">
+             <p>top baaar</p>
+         </div>
+     </section>
+       <section class="mechanism">
+           <h4 id="instruction">Inhale/exhale/hold etc</h4>
+           <center><canvas id="canvas" width="300" height="300"></canvas></center>
+           <script src="codeBreathee.js"></script>
+           <center><a href="homePage.htm"><input type="submit" value="Feeling better?" id="betterButton"></input></a></center>
+       </section>
+   </div>
+   <section id="footer">
+    <div id="footer">
+        <p>Autor: Kinga Żmuda | Czcionka na darmowej licencji firmy <a style="color: #80B0AA;
+        text-decoration: none;" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">Google</a></p>
     </div>
-        <div class="box">
-                <!--Here put link to about page/about window-->
-        <center><label id="instruction">Inhale/exhale/hold etc</label></center>
-        <div class="main-content">
-            <!-- click to go to breathee breathing helper -
-            main function with circular motion, go to next page actually, but use javascript on opening!-->
-            <canvas id="canvas" width="300" height="300"></canvas>
-            <!--myCanvas-->
-            <script src="codeBreathee.js"></script>
-
-
-        </div>
-
-        <center><a href="homePage.htm"><input type="submit" value="Feeling better?" id="betterButton"></input></a></center>
-    </div>
+</section>
 </BODY>
 </HTML>
 

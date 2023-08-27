@@ -1,0 +1,88 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    /*background-color: black;*/
+    color: white;
+
+
+}
+
+a{
+    text-decoration:none;
+}
+.main-content{
+    display: flex;
+}
+
+
+center{
+    margin-top:50px;
+    font-size: 24px;
+
+}
+
+#betterButton{
+    display: inline;
+}
+
+.box{
+    display: grid;
+    place-items: center;
+    padding-top: 4.3%;
+
+
+}
+body{
+    background-image: url('background-toned-down.PNG');
+
+}
+
+/*media queries to be done if needed*/
+
+button, input[type=submit] {
+    border-radius: 3px;
+    border: 1.5px solid #456E70;
+    background-color: #456E70;
+    transition-duration: 0.4s;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: white;
+}
+
+button:hover,input[type=submit]:hover {
+    background-color: #80B0AA;
+    border: 5px solid #80B0AA;
+
+}
+
+/*base so that it will look somehow but do with bootstrap grids more so that it really responsive*/
+
+    @media (min-width: 401px) and  (max-width: 980px) and (orientation: portrait) {
+        *{
+            zoom: 120%;
+            margin-top:20%;
+
+        }
+        .main-content{
+
+        }
+
+
+}
+@media (min-width: 667px) and  (max-width: 980px) and (orientation: portrait){
+    *{
+        zoom: 120%;
+        margin-top:10%;
+
+    }
+    .main-content{
+
+    }
+
+
+}
+
+
+
+/*hot mess regarding button-input situation - decide for one*/
