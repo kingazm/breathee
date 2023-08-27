@@ -79,6 +79,7 @@ h1, h4 {
         top:0;
         font-size: 35px;
         padding-top:1%;
+        padding-bottom:2%;
     }
 
     canvas{
@@ -91,8 +92,10 @@ h1, h4 {
         width: 40vw;
         font-size: 40px;
         margin-top: 5vh;
+        margin-bottom: 4vh;
     }
 }
+/*sth in between tablet and laptop cause in the middle it kinda collapses - works great on mobile tho!*/
 
 @media (max-width: 767px) {
 
