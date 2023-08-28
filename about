@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+    <title>Breathee - your handy way to unwind.</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+
+
+</HEAD>
+
+<BODY>
+    <div class="container">
+        <section id="topbar">
+         <div id="topbar">
+             <p></p>
+         </div>
+     </section>
+       <section class="about">
+           <h3>How does it work?</h3>
+          <center><canvas id="canvas" width="100" height="100"></canvas></center>
+           <p>Breathee is your personal stable breathing assistant. It's role is to help you unwind and calm down, using calming breathing techniques and patterns. With guided breathing including visual helps, it shifts your focus, allowing to reduce momental anxiety and improve mindfulness.</p>
+          <h3>When it's not enought</h3>
+          <p>In critical mental state it's crucial to contact the right specialist and seek their assistence.</p>
+          <p>Helpline Poland: +48 116 111</p>
+          <p>The list will be updated regularly</p>
+           <script src="codeBreathee.js"></script>
+           <center><a href="homePage.htm"><input type="submit" value="Feeling better?" id="betterButton"></input></a></center>
+       </section>
+   </div>
+   <section id="footer">
+    <div id="footer">
+        <p>Autor: Kinga Żmuda | Czcionka na darmowej licencji firmy <a style="color: #80B0AA;
+        text-decoration: none;" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">Google</a></p>
+    </div>
+</section>
+</BODY>
+</HTML>
+
+<!--update: add another page inbetween home and main - it will contain the instructions, and maybe later on "don't show again"
+tick and a button "got it!"-->
