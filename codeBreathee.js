@@ -59,6 +59,10 @@ function breathee(){
     setTimeout(holdFunction(), 8000);
 }
 
+function back(){
+    window.location.assign("homePage.htm");
+}
+
 //array of objects, used in "for" option but figure out some way to reset the loop, as the infinity loop is not possible
 const timings = [
     { funct: inhaleFunction, delay: 10000 },
@@ -93,11 +97,14 @@ const timings = [
 { funct: holdFunction, delay: 152000 },
 { funct: exhaleFunction, delay: 156000 },
 { funct: justBreatheFunction, delay: 160000 },
+{ funct: back, delay: 161000 },
+
 
 ];
 //adjust the timing
 //for the time being, little ugly but works for now
 //after some time, make screen giving help tips and reseting back to home screen
+
 
 for (const timing of timings) {
         setTimeout(timing.funct, timing.delay);
