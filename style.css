@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url('home-toneddown-desktop.PNG');
+    background-image: url('images/home-toneddown-desktop.PNG');
 }
 
 .main-content{
@@ -136,7 +136,7 @@ a{
 
     }
     body{
-        background-image: url('home-toneddown-mobile.PNG');
+        background-image: url('images/home-toneddown-mobile.PNG');
     }
     .main-content{
         top: 12%;
@@ -147,7 +147,6 @@ a{
         bottom: 90%;
     }
 }
-/*sth in between tablet and laptop cause in the middle it kinda collapses - works great on mobile tho!*/
 
 @media (max-width: 900px) {
 
