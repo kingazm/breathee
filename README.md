@@ -14,6 +14,6 @@ Javascript (main functionalities), Canvas API (circular animation), CSS (design)
 
 # How to access?
 
-Breathe is currently deployes via GitHub Pages module, so it can be direcly viewed via link below:
+Breathe is currently deployed via GitHub Pages, so it can be direcly viewed and tested via link below:
 
 https://kingazm.github.io/breathee/homePage.htm
