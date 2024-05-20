@@ -3,7 +3,7 @@ document.getElementById("instruction").innerHTML = "start slowly breathing";
 //ANIMATION SECTION
 const dot = new Image();
 function init() {
-  dot.src = "dot.png"; //the image going around on circle
+  dot.src = "images/dot.png"; //the image going around on circle
   window.requestAnimationFrame(draw);
 }
 
