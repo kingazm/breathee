@@ -6,7 +6,7 @@ Live, dynamic instructions appearing on screen guide the user through exercises 
 The breathing assistant can be stopped anytime user clicks the Feeling better? button. Otherwhise, the exercise takes up about 2.5 mins and then the home screen appears back again.
 Additionaly, the website is equiped with About page, containing information about the app and instructions on where to seek help in a mental health crisis (when the self-calming techniques are not enough to relieve too).
 
-Deployed online, Breathee can be accesed anywhere on Earth, on a computer or mobile devices.
+Deployed online, Breathee can be accesed anywhere on Earth with access to the Internet, on a computer or mobile devices.
 
 # Tech stack
 
